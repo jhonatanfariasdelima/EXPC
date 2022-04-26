@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Hospital - Consultas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">       
+        <link href="form.css" rel="stylesheet">
+    </header>
+    <body class="text-center">
+        <main class="form-signin" style="height: 100%; width: 100%; padding: 0;" >
+          <form>
+            <img src="img/download.jpg" alt="" width="25%" height="25%">
+            <h1 class="h3 mb-3 fw-normal">Formulario médico</h1>
+            <div class="form-floating" style="margin-bottom: 10px; margin-top: 20px;">
+              <input class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput" >Name</label>
+            </div>
+            <div class="form-floating" style="margin-bottom: 10px; margin-top: 20px;">
+                <input class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" >CPF</label>
+            </div>
+            <div class="form-floating" style="margin-bottom: 10px; margin-top: 20px;">
+                <input class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" >Area de especialidade</label>
+            </div>
+            <div class="form-floating" style="margin-bottom: 10px; margin-top: 20px;">
+                <textarea class="form-control" id="floatingPassword" placeholder="Password"></textarea>
+                <label for="floatingPassword">Sintomas</label>
+            </div>
+            <div class="form-floating" style="margin-bottom: 10px; margin-top: 20px;">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fone">Telefone de contato: </label>
+                        </td>
+                        <td style="width: 29%;"></td>
+                        <td>
+                            <input class="form-control" type="tel" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 99999-9999">
+                        </td>
+                    </tr>
+                </table>
+            </div>          
+            <div class="form-floating " style="margin-bottom: 10px; margin-top: 20px;">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="hora-desejada">Dia e Hora: </label>
+                        </td>
+                        <td style="width: 29%;"></td>
+                        <td style="padding-right: 5px ;">
+                            <input class="form-control" id="floatingInput" type='date' id='dtnasc'>
+                        </td>
+                        <td>
+                            <input class="form-control" type="time" id="hora-desejada" name="hora-desejada" required>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" style="margin-top: 20px;" type="submit">Enviar</button>
+          </form>
+        </main>
+    </body>
+</html>
